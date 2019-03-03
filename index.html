@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0021)https://statistiq.ru/ -->
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,28 +21,32 @@
     <link href="style.css" rel="stylesheet">
 
     <style type="text/css">
-      .fade { min-height: 400px; }
+      .  { min-height: 400px; }
+
+      @media (min-width: 992px) {
+          #statistiqru { margin-top: -1em; }
+      }
+
     </style>
 
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
-      
-
-      <h1 id="statistiqru">STATISTIQ.ru
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-          <button type="button" class="btn btn-secondary" style="text-align: right;" onclick="location.href='mailto:contact@statistiq.ru?subject=Заказ%20консультацию&body=Добрый%20день%21%0D%0DПрошу%20предоставить%20консультацию%20по%20продукту%20STATISTIQ'">Заказать консультацию.</button>
-      </h1>
-
+      <div style="text-align: right;">
+        <button type="button" class="btn btn-primary"  onclick="location.href='mailto:contact@statistiq.ru?subject=Заказ%20консультацию&body=Добрый%20день%21%0D%0DПрошу%20предоставить%20консультацию%20по%20продукту%20STATISTIQ'">Заказать консультацию.</button>
+      </div>
+      <h1 id="statistiqru">STATISTIQ.ru</h1>
 
       
 
 <div class="bd-example bd-example-tabs">
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <!-- class="navbar navbar-light" style="background-color: #e3f2fd;" -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="nav nav-tabs nav-fill" id="pills-tab" role="tablist">
     <li class="nav-item">
     </li>    
     <li class="nav-item">
@@ -63,23 +67,48 @@
     <li class="nav-item">
       <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="false">О нас</a>
     </li>        
-  <!--     <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Контакт</a>
-      </li>     -->
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Запросить предложение</a>
+    </li>    
   </ul>
+  </div>
+  </nav>
   <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane   show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
       <p>Мы помогаем легко, быстро и удобно анализировать огромный массив данных о сервисных транзакциях. Для провайдеров телефонной связи - массив записей о звонках. Для провайдеров платежных сервисов - массив записей о платежах.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>Ежедневное и ежеминутное использование сервиса приводит к формированию массива записей. Например, если 100 клиентов каждую минуту совершают вызов, то за три года у вас сформируется как минимум 157 миллионов записей. Это уже не мало для офисного приложения и не много для серверного. Количество выборок и группировок по сервисным транзакциям еще выше в численном эквиваленте. Наше решение позволяет с комфортной скоростью работать с миллиардами записей и сотнями метрик поверх этого объема.</p>
       <p>Еще один момент, который важен для наших пользователей - скорость обновления данных. Реальность промышленной эксплуатации сервисных систем массового обслуживания зачастую состоит в том, что бизнес-пользователи получают информацию с задержкой в месяц. Соответственно, пропадает возможность оперативно принимать решения об эффективности рекламных кампаний и характере поведения пользователей. STATISTIQ решает и эту боль. Вы получаете данные оперативно - сутки, минуты, секунды - в зависимости от готовности инфраструктуры вашего предприятия.</p>
       <p>STATISTIQ успешно зарекомендовал себя для работы с услугами IP-телефонии, такими как услуга 8800 и для анализа работы корпоративных и межоператорских подключений (соединения-транки).</p>
     </div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="tab-pane  " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
       <p>Для наилучшего пользовательского эффекта мы используем комбинацию баз данных и стек технологий для работы программного комплекса STATISTIQ.</p>
-      <img src="statistiq.gif" align="right" style="width: 300px;">      
+      <img src="archhighlight.png" align="right" style="width: 300px;" onclick="$('#techModal').modal()">      
       <p>Простейшим вариантом развертывания может быть использование одного сервера в вашей корпоративной сети. Пользователи получают доступ через Web интерфейс к серверным компонентам Front-End сервера, выполняющим функции авторизации, разграничения прав доступа и защиты данных от несанционированного доступа. Компоненты Front-End взаимодействуют с Back-End компонентами систем управления базами данных и выполняют логические операции формирования пользовательских наборов данных для визуализации и анализа. Компоненты Back-End имеют и подсистемы хранения исходных записей о транзакциях и специальные базы данных временных рядов, позволяющих в доли секунды формировать необходимые числовые агрегаты и усреднения, надстраивать систему алгоритмами машинного обучения.</p>
       <p>Данные о пользовательских транзакциях поступают из инфраструктуры через систему загрузчиков файлов или потоком через информационную шину. Может быть реализован сбор данных о транзакциях на сетевом уровне - через обработку копии сетевого трафика.</p>
+
+
+      <!-- Modal Start -->
+      <div class="modal  " id="techModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Высокоуровневая схема</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="archhighlight.png" align="center" style="width: 800px;"> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" style="text-align: right;" onclick="location.href='mailto:contact@statistiq.ru?subject=Запрос%20подробностей&body=Добрый%20день%21%0D%0DПрошу%20предоставить%20технические%20подробности%20по%20продукту%20STATISTIQ'">Запросить подробности</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1500">
         <div class="carousel-inner" >
@@ -149,19 +178,19 @@
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+    <div class="tab-pane  " id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
       <p>
         <iframe style="min-width:680px; min-height: 380px;" src="https://www.youtube.com/embed/QnBscIcA3P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>Работа в STATISTIQ на примере оператора услуг VoIP, в этом примере около миллиарда тарификационных записей.       
       </p>
     </div>    
-    <div class="tab-pane fade" id="pills-purchase" role="tabpanel" aria-labelledby="pills-purchase-tab">
+    <div class="tab-pane  " id="pills-purchase" role="tabpanel" aria-labelledby="pills-purchase-tab">
       <p>Мы предлагаем бесплатный тест-драйв комплекса STATISTIQ с вашими данными в нашем облаке.</p>
       <p>Вы можете использовать наш хостинг и для постоянного использования - в таком случае мы готовы брать ежемесячную плату за использование. Для целей статистики не важны конкретные номера телефонов или идентификаторы платежных инструментов и в случае облачного использования может быть настроено маскирование, шифрование или обеднение данных при публикации к нам в систему.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>Мы готовы предоставить наш программный комплекс для развертывания в вашей инфраструктуре. При этом возможна разовая оплата неограниченной по времени лицении с последующей технической поддержкой или формат ежегодной подписки. Мы производим обучение технических специалистов и пользователей заказчика. Вы можете заказать интеграцию STATISTIQ с существующими информационными системами вашей инфраструктуры.</p>
     </div>
-    <div class="tab-pane fade" id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
+    <div class="tab-pane  " id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
       <p>Тест-драйв - бесплатно.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>
@@ -177,7 +206,7 @@
       <p>НДС не облагается.</p>
       <p>Конечная стоимость определяется после консультации по объемам хранения и форматам поступающих данных, согласования разбиения на услуги при представлении в интерфейсах, необходимой настройки отчетности и других технических деталей.</p>
     </div>    
-    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+    <div class="tab-pane  " id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
         <p>Программное решение STSTISTIQ распространяется компанией РОССИННО. </p>
         <p> 
           Компания РОССИННО была основана в 2012 году. <br>
@@ -196,8 +225,9 @@
 
       </p>
     </div>
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="tab-pane  " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       <p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4joylxnzEuM9PJbl4TVzw1rV3wNdJwIIbhSFBJvLsEml0dg/viewform?embedded=true" width="100%" height="2356" frameborder="0" marginheight="0" marginwidth="0">Идет загрузка...</iframe>
       </p>
     </div>
 
@@ -209,6 +239,9 @@
       <h1 id="ru"></h1>
     
 </div>
+
+
+
 
     <footer class="footer">
       <div class="container">
@@ -226,6 +259,13 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+  $('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    $('.navbar-toggler').click(); //bootstrap 4.x
+  });
+</script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
