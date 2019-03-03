@@ -21,10 +21,13 @@
     <link href="style.css" rel="stylesheet">
 
     <style type="text/css">
-      .  { min-height: 400px; }
+      .fade  { min-height: 400px; }
 
       @media (min-width: 992px) {
           #statistiqru { margin-top: -1em; }
+      }
+      p.text-muted a {
+        color: #6c757d;
       }
 
     </style>
@@ -33,7 +36,7 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       <div style="text-align: right;">
-        <button type="button" class="btn btn-primary"  onclick="location.href='mailto:contact@statistiq.ru?subject=Заказ%20консультацию&body=Добрый%20день%21%0D%0DПрошу%20предоставить%20консультацию%20по%20продукту%20STATISTIQ'">Заказать консультацию.</button>
+        <button type="button" class="btn btn-primary"  onclick="location.href='mailto:contact@statistiq.ru?subject=Заказ%20консультацию&body=Добрый%20день%21%0D%0DПрошу%20предоставить%20консультацию%20по%20продукту%20STATISTIQ'">Заказать консультацию</button>
       </div>
       <h1 id="statistiqru">STATISTIQ.ru</h1>
 
@@ -74,14 +77,14 @@
   </div>
   </nav>
   <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane   show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
       <p>Мы помогаем легко, быстро и удобно анализировать огромный массив данных о сервисных транзакциях. Для провайдеров телефонной связи - массив записей о звонках. Для провайдеров платежных сервисов - массив записей о платежах.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>Ежедневное и ежеминутное использование сервиса приводит к формированию массива записей. Например, если 100 клиентов каждую минуту совершают вызов, то за три года у вас сформируется как минимум 157 миллионов записей. Это уже не мало для офисного приложения и не много для серверного. Количество выборок и группировок по сервисным транзакциям еще выше в численном эквиваленте. Наше решение позволяет с комфортной скоростью работать с миллиардами записей и сотнями метрик поверх этого объема.</p>
       <p>Еще один момент, который важен для наших пользователей - скорость обновления данных. Реальность промышленной эксплуатации сервисных систем массового обслуживания зачастую состоит в том, что бизнес-пользователи получают информацию с задержкой в месяц. Соответственно, пропадает возможность оперативно принимать решения об эффективности рекламных кампаний и характере поведения пользователей. STATISTIQ решает и эту боль. Вы получаете данные оперативно - сутки, минуты, секунды - в зависимости от готовности инфраструктуры вашего предприятия.</p>
       <p>STATISTIQ успешно зарекомендовал себя для работы с услугами IP-телефонии, такими как услуга 8800 и для анализа работы корпоративных и межоператорских подключений (соединения-транки).</p>
     </div>
-    <div class="tab-pane  " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
       <p>Для наилучшего пользовательского эффекта мы используем комбинацию баз данных и стек технологий для работы программного комплекса STATISTIQ.</p>
       <img src="archhighlight.png" align="right" style="width: 300px;" onclick="$('#techModal').modal()">      
       <p>Простейшим вариантом развертывания может быть использование одного сервера в вашей корпоративной сети. Пользователи получают доступ через Web интерфейс к серверным компонентам Front-End сервера, выполняющим функции авторизации, разграничения прав доступа и защиты данных от несанционированного доступа. Компоненты Front-End взаимодействуют с Back-End компонентами систем управления базами данных и выполняют логические операции формирования пользовательских наборов данных для визуализации и анализа. Компоненты Back-End имеют и подсистемы хранения исходных записей о транзакциях и специальные базы данных временных рядов, позволяющих в доли секунды формировать необходимые числовые агрегаты и усреднения, надстраивать систему алгоритмами машинного обучения.</p>
@@ -89,7 +92,7 @@
 
 
       <!-- Modal Start -->
-      <div class="modal  " id="techModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="techModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -178,19 +181,19 @@
         </div>
       </div>
     </div>
-    <div class="tab-pane  " id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+    <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
       <p>
         <iframe style="min-width:680px; min-height: 380px;" src="https://www.youtube.com/embed/QnBscIcA3P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>Работа в STATISTIQ на примере оператора услуг VoIP, в этом примере около миллиарда тарификационных записей.       
       </p>
     </div>    
-    <div class="tab-pane  " id="pills-purchase" role="tabpanel" aria-labelledby="pills-purchase-tab">
+    <div class="tab-pane fade" id="pills-purchase" role="tabpanel" aria-labelledby="pills-purchase-tab">
       <p>Мы предлагаем бесплатный тест-драйв комплекса STATISTIQ с вашими данными в нашем облаке.</p>
       <p>Вы можете использовать наш хостинг и для постоянного использования - в таком случае мы готовы брать ежемесячную плату за использование. Для целей статистики не важны конкретные номера телефонов или идентификаторы платежных инструментов и в случае облачного использования может быть настроено маскирование, шифрование или обеднение данных при публикации к нам в систему.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>Мы готовы предоставить наш программный комплекс для развертывания в вашей инфраструктуре. При этом возможна разовая оплата неограниченной по времени лицении с последующей технической поддержкой или формат ежегодной подписки. Мы производим обучение технических специалистов и пользователей заказчика. Вы можете заказать интеграцию STATISTIQ с существующими информационными системами вашей инфраструктуры.</p>
     </div>
-    <div class="tab-pane  " id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
+    <div class="tab-pane fade" id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
       <p>Тест-драйв - бесплатно.</p>
       <img src="statistiq.gif" align="right" style="width: 300px;">      
       <p>
@@ -206,7 +209,7 @@
       <p>НДС не облагается.</p>
       <p>Конечная стоимость определяется после консультации по объемам хранения и форматам поступающих данных, согласования разбиения на услуги при представлении в интерфейсах, необходимой настройки отчетности и других технических деталей.</p>
     </div>    
-    <div class="tab-pane  " id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
         <p>Программное решение STSTISTIQ распространяется компанией РОССИННО. </p>
         <p> 
           Компания РОССИННО была основана в 2012 году. <br>
@@ -225,7 +228,7 @@
 
       </p>
     </div>
-    <div class="tab-pane  " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       <p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4joylxnzEuM9PJbl4TVzw1rV3wNdJwIIbhSFBJvLsEml0dg/viewform?embedded=true" width="100%" height="2356" frameborder="0" marginheight="0" marginwidth="0">Идет загрузка...</iframe>
       </p>
@@ -261,9 +264,9 @@
 
 <script type="text/javascript">
   $('.nav a').on('click', function(){
-    $('.btn-navbar').click(); //bootstrap 2.x
-    $('.navbar-toggle').click(); //bootstrap 3.x by Richard
-    $('.navbar-toggler').click(); //bootstrap 4.x
+    if ( $(window).width() < 813 ) { /* 812 is iPhoneX landscape width */
+      $('.navbar-toggler').click(); 
+    }
   });
 </script>
 
